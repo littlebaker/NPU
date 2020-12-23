@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_ConvLayer_behav/xsimk.exe -simmode gui -wdb tb_ConvLayer_behav.wdb -simrunnum 0 -socket 56581
+Running: xsim.dir/tb_ConvLayer_behav/xsimk.exe -simmode gui -wdb tb_ConvLayer_behav.wdb -simrunnum 0 -socket 53180
 Design successfully loaded
-Design Loading Memory Usage: 11992 KB (Peak: 11992 KB)
-Design Loading CPU Usage: 124 ms
+Design Loading Memory Usage: 11836 KB (Peak: 11836 KB)
+Design Loading CPU Usage: 77 ms
 Simulation completed
-Simulation Memory Usage: 14760 KB (Peak: 14760 KB)
-Simulation CPU Usage: 358 ms
+Simulation Memory Usage: 15816 KB (Peak: 15816 KB)
+Simulation CPU Usage: 4624 ms

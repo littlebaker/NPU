@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1608649126">
   <File Type="PA-TCL" Name="LayerTop_v2.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="LayerTop_v2_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="LayerTop_v2_reports.tcl"/>
   <File Type="RDS-RDS" Name="LayerTop_v2.vds"/>
   <File Type="RDS-UTIL" Name="LayerTop_v2_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="LayerTop_v2_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="LayerTop_v2.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="LayerTop_v2_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="LayerTop_v2_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/ActivePipeline.v">
@@ -269,6 +266,6 @@
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_cl_act_buf"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_cl_kernel_buf"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_increase_buf"/>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_kernel"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_input_buffer"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_kernel"/>
 </GenRun>

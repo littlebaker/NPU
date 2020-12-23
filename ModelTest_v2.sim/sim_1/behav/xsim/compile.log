@@ -40,3 +40,5 @@ INFO: [VRFC 10-311] analyzing module mult_unit_v2
 WARNING: [VRFC 10-2654] begin/end is required for generate-for in this mode of verilog [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/mult_unit_v2.v:71]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sim_1/imports/new/tb_ConvLayer.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_ConvLayer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
