@@ -1,0 +1,2376 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 22 22:58:51 2020
+# Process ID: 12340
+# Current directory: E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1
+# Command line: vivado.exe -log LayerTop_v2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LayerTop_v2.tcl
+# Log file: E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/LayerTop_v2.vds
+# Journal file: E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LayerTop_v2.tcl -notrace
+Command: synth_design -top LayerTop_v2 -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15992 
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:97]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:99]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:100]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:101]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:102]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:103]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:104]
+WARNING: [Synth 8-2507] parameter declaration becomes local in ConvUnit_v2 with formal parameter declaration list [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:105]
+WARNING: [Synth 8-1935] empty port in module declaration [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ReluQuantization.v:33]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1058.086 ; gain = 240.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LayerTop_v2' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LayerTop_v2.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SETARG bound to: 1 - type: integer 
+	Parameter RUNNING bound to: 2 - type: integer 
+	Parameter READING bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LayerTop_v2.v:75]
+INFO: [Synth 8-6157] synthesizing module 'ConvLayer' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter PROCESSING bound to: 1 - type: integer 
+	Parameter FIN bound to: 2 - type: integer 
+	Parameter cIDLE bound to: 0 - type: integer 
+	Parameter cLOAD_KERNEL bound to: 1 - type: integer 
+	Parameter cLOAD_INPUT bound to: 2 - type: integer 
+	Parameter cSET_ARG bound to: 3 - type: integer 
+	Parameter cWAIT_CAL_FIN bound to: 4 - type: integer 
+	Parameter cWAIT_READ bound to: 5 - type: integer 
+	Parameter cFIN bound to: 6 - type: integer 
+	Parameter rIDLE bound to: 0 - type: integer 
+	Parameter rFIN bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter LOAD_DATA bound to: 1 - type: integer 
+	Parameter LOAD_INPUT bound to: 2 - type: integer 
+	Parameter WAIT_FOR_CAL_FIN bound to: 3 - type: integer 
+	Parameter WAIT_FOR_READ bound to: 4 - type: integer 
+	Parameter pIDLE bound to: 0 - type: integer 
+	Parameter pBEFORE bound to: 1 - type: integer 
+	Parameter pBETWEEN bound to: 2 - type: integer 
+	Parameter pAFTER bound to: 3 - type: integer 
+	Parameter pFIN bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* use_dsp = "yes" *) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:134]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp = "yes" *) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:504]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:554]
+INFO: [Synth 8-6157] synthesizing module 'ActivePipeline' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ActivePipeline.v:23]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ActivePipeline' (1#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ActivePipeline.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ConvUnit_v2' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:23]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter NUMBER_OF_INPUT_WORDS bound to: 1024 - type: integer 
+	Parameter bit_num bound to: 10 - type: integer 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter WRITE_FIFO bound to: 4'b0001 
+	Parameter PROCESSING bound to: 4'b0010 
+	Parameter WAIT_FOR_READING bound to: 4'b0011 
+	Parameter READ_DATA bound to: 4'b0100 
+	Parameter sLOADING bound to: 1 - type: integer 
+	Parameter sIDLE bound to: 0 - type: integer 
+	Parameter sSLOWSTART bound to: 1 - type: integer 
+	Parameter sCAL_LOAD bound to: 2 - type: integer 
+	Parameter sCAL_NOLOAD bound to: 3 - type: integer 
+	Parameter sWAITFIN bound to: 4 - type: integer 
+	Parameter sFIN bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:646]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:886]
+INFO: [Synth 8-6157] synthesizing module 'ShiftMatrix' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ShiftMatrix.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ShiftArray' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ShiftArray.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShiftArray' (2#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ShiftArray.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShiftMatrix' (3#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ShiftMatrix.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LoadBlock' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LoadBlock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LoadBlock' (4#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LoadBlock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mult_unit_v2' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/mult_unit_v2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult_unit_v2' (5#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/mult_unit_v2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlPipeline' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ControlPipeline.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ControlPipeline' (6#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ControlPipeline.v:23]
+INFO: [Synth 8-6157] synthesizing module 'add_unit' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:23]
+WARNING: [Synth 8-6014] Unused sequential element bulcdsf[2].control_pipe_reg[3] was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:99]
+WARNING: [Synth 8-6014] Unused sequential element bulcdsf[3].control_pipe_reg[4] was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:99]
+WARNING: [Synth 8-6014] Unused sequential element bulcdsf[4].control_pipe_reg[5] was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:99]
+WARNING: [Synth 8-6014] Unused sequential element bulcdsf[5].control_pipe_reg[6] was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:99]
+WARNING: [Synth 8-6014] Unused sequential element bulcdsf[6].control_pipe_reg[7] was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'add_unit' (7#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'au_input_ksize' does not match port width (4) of module 'add_unit' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:1102]
+INFO: [Synth 8-6157] synthesizing module 'ReluQuantization' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ReluQuantization.v:23]
+WARNING: [Synth 8-308] ignoring empty port [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ReluQuantization.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'ReluQuantization' (8#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ReluQuantization.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'rq_input_qin' does not match port width (4) of module 'ReluQuantization' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:1116]
+WARNING: [Synth 8-689] width (8) of port connection 'rq_input_qw' does not match port width (4) of module 'ReluQuantization' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:1117]
+WARNING: [Synth 8-689] width (8) of port connection 'rq_input_qout' does not match port width (4) of module 'ReluQuantization' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:1118]
+WARNING: [Synth 8-7023] instance 'u_ReluQuantization' of module 'ReluQuantization' has 11 connections declared, but only 10 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:1112]
+INFO: [Synth 8-6155] done synthesizing module 'ConvUnit_v2' (9#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'result' does not match port width (32) of module 'ConvUnit_v2' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:805]
+INFO: [Synth 8-6157] synthesizing module 'PaddingArray' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PaddingArray.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PaddingArray' (10#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PaddingArray.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_input_buffer' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_input_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_input_buffer' (11#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_input_buffer_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'blk_mem_input_buffer' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:844]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (8) of module 'blk_mem_input_buffer' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:848]
+INFO: [Synth 8-6157] synthesizing module 'ActivePipeline__parameterized0' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ActivePipeline.v:23]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ActivePipeline__parameterized0' (11#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ActivePipeline.v:23]
+WARNING: [Synth 8-6014] Unused sequential element act_max_num_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:339]
+WARNING: [Synth 8-6014] Unused sequential element total_act_count_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:410]
+WARNING: [Synth 8-6014] Unused sequential element stride_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:431]
+WARNING: [Synth 8-6014] Unused sequential element input_read_pointer_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:750]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryGate' (12#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:23]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:976]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate0' of module 'MemoryGate' has 23 connections declared, but only 22 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:958]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1005]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate1' of module 'MemoryGate' has 23 connections declared, but only 20 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:987]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1034]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate2' of module 'MemoryGate' has 23 connections declared, but only 20 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1016]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1063]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate3' of module 'MemoryGate' has 23 connections declared, but only 20 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1045]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1092]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate4' of module 'MemoryGate' has 23 connections declared, but only 20 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1074]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1121]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate5' of module 'MemoryGate' has 23 connections declared, but only 20 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1103]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1150]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate6' of module 'MemoryGate' has 23 connections declared, but only 20 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1132]
+WARNING: [Synth 8-689] width (3) of port connection 'mg_output_addrb_kernel' does not match port width (32) of module 'MemoryGate' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1179]
+WARNING: [Synth 8-7023] instance 'u_MemoryGate7' of module 'MemoryGate' has 23 connections declared, but only 20 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1161]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_cl_act_buf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_cl_act_buf_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_cl_act_buf' (13#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_cl_act_buf_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (7) of module 'blk_mem_cl_act_buf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1196]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (7) of module 'blk_mem_cl_act_buf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1200]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_cl_kernel_buf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_cl_kernel_buf_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_cl_kernel_buf' (14#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_cl_kernel_buf_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IncreaseBuf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter WRITING bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:185]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:229]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_increase_buf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_increase_buf_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_increase_buf' (15#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_increase_buf_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (7) of module 'blk_mem_increase_buf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:308]
+WARNING: [Synth 8-689] width (16) of port connection 'addrb' does not match port width (7) of module 'blk_mem_increase_buf' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:314]
+WARNING: [Synth 8-6014] Unused sequential element write_pointer_pipe_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:125]
+WARNING: [Synth 8-6014] Unused sequential element max_write_pointer_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'IncreaseBuf' (16#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/IncreaseBuf.v:23]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf0' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1347]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf1' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1361]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf2' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1375]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf3' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1389]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf4' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1403]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf5' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1417]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf6' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1431]
+WARNING: [Synth 8-7023] instance 'u_IncreaseBuf7' of module 'IncreaseBuf' has 10 connections declared, but only 9 given [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:1445]
+WARNING: [Synth 8-6014] Unused sequential element padding_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:917]
+WARNING: [Synth 8-6014] Unused sequential element qin_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:919]
+WARNING: [Synth 8-6014] Unused sequential element qout_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:920]
+WARNING: [Synth 8-6014] Unused sequential element qw_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:921]
+WARNING: [Synth 8-6014] Unused sequential element stride_reg was removed.  [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:926]
+INFO: [Synth 8-6155] done synthesizing module 'ConvLayer' (17#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_kernel' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_kernel_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_kernel' (18#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_kernel_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'blk_mem_kernel' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LayerTop_v2.v:209]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_act' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_act_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_act' (19#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/.Xil/Vivado-12340-LITTLEBAKER/realtime/blk_mem_act_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (12) of module 'blk_mem_act' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LayerTop_v2.v:226]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (12) of module 'blk_mem_act' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LayerTop_v2.v:234]
+INFO: [Synth 8-6155] done synthesizing module 'LayerTop_v2' (20#1) [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/LayerTop_v2.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1122.676 ; gain = 304.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.676 ; gain = 304.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.676 ; gain = 304.703
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.975 . Memory (MB): peak = 1122.676 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_act/blk_mem_act/blk_mem_act_in_context.xdc] for cell 'u_blk_mem_act'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_act/blk_mem_act/blk_mem_act_in_context.xdc] for cell 'u_blk_mem_act'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_act/blk_mem_act/blk_mem_act_in_context.xdc] for cell 'u_blk_mem_act_write'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_act/blk_mem_act/blk_mem_act_in_context.xdc] for cell 'u_blk_mem_act_write'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_act_buf/blk_mem_cl_act_buf/blk_mem_cl_act_buf_in_context.xdc] for cell 'u_ConvLayer/u_act_buf'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_act_buf/blk_mem_cl_act_buf/blk_mem_cl_act_buf_in_context.xdc] for cell 'u_ConvLayer/u_act_buf'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf0'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf0'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf1'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf1'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf2'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf2'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf3'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf3'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf4'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf4'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf5'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf5'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf6'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf6'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf7'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf/blk_mem_cl_kernel_buf_in_context.xdc] for cell 'u_ConvLayer/u_kernel_buf7'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf0/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf0/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf1/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf1/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf2/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf2/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf3/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf3/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf4/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf4/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf5/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf5/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf6/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf6/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf7/u_bib'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_increase_buf/blk_mem_increase_buf/blk_mem_increase_buf_in_context.xdc] for cell 'u_ConvLayer/u_IncreaseBuf7/u_bib'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate0/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate0/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate1/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate1/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate2/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate2/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate3/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate3/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate4/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate4/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate5/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate5/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate6/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate6/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate7/u_input_buffer'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_input_buffer/blk_mem_input_buffer/blk_mem_input_buffer_in_context.xdc] for cell 'u_ConvLayer/u_MemoryGate7/u_input_buffer'
+Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_kernel/blk_mem_kernel/blk_mem_kernel_in_context.xdc] for cell 'u_blk_mem_kernel'
+Finished Parsing XDC File [e:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/ip/blk_mem_kernel/blk_mem_kernel/blk_mem_kernel_in_context.xdc] for cell 'u_blk_mem_kernel'
+Parsing XDC File [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/constrs_1/new/clk.xdc]
+Finished Parsing XDC File [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/constrs_1/new/clk.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1348.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.551 . Memory (MB): peak = 1348.250 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_blk_mem_act' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_blk_mem_act_write' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_blk_mem_kernel' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_act_buf' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf4' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf5' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf6' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_kernel_buf7' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf0/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf1/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf2/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf3/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf4/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf5/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf6/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_IncreaseBuf7/u_bib' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate0/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate1/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate2/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate3/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate4/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate5/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate6/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ConvLayer/u_MemoryGate7/u_input_buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1372.055 ; gain = 554.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1372.055 ; gain = 554.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_blk_mem_act. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_blk_mem_act_write. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_act_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_kernel_buf7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf0/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf1/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf2/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf3/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf4/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf5/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf6/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_IncreaseBuf7/u_bib. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate0/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate1/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate2/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate3/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate4/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate5/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate6/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ConvLayer/u_MemoryGate7/u_input_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_blk_mem_kernel. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1372.055 ; gain = 554.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "kernel_d1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "kernel_d2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "kernel_d3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "kernel_d4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "kernel_d5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf__xdcDup__5'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf__xdcDup__6'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf__xdcDup__7'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'IncreaseBuf'
+INFO: [Synth 8-5546] ROM "kernel_load_time" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'LayerTop_v2'
+WARNING: [Synth 8-327] inferring latch for variable 'slow_start_fin_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:486]
+WARNING: [Synth 8-327] inferring latch for variable 'sm_input_loaddst_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:836]
+WARNING: [Synth 8-327] inferring latch for variable 'kernel_d1_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:889]
+WARNING: [Synth 8-327] inferring latch for variable 'kernel_d2_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:890]
+WARNING: [Synth 8-327] inferring latch for variable 'kernel_d3_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:891]
+WARNING: [Synth 8-327] inferring latch for variable 'kernel_d4_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:892]
+WARNING: [Synth 8-327] inferring latch for variable 'kernel_d5_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:893]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+WARNING: [Synth 8-327] inferring latch for variable 'input_buf_data_reg' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:303]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf__xdcDup__5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf__xdcDup__6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf__xdcDup__7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+                 WRITING |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'IncreaseBuf'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                         00000000
+                  SETARG |                               01 |                         00000001
+                 RUNNING |                               10 |                         00000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'LayerTop_v2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1372.055 ; gain = 554.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |ConvUnit_v2                |           8|     11171|
+|2     |MemoryGate__xdcDup__1__GC0 |           1|      2010|
+|3     |MemoryGate__xdcDup__2__GC0 |           1|      2010|
+|4     |MemoryGate__xdcDup__3__GC0 |           1|      2010|
+|5     |MemoryGate__xdcDup__4__GC0 |           1|      2010|
+|6     |MemoryGate__xdcDup__5__GC0 |           1|      2010|
+|7     |MemoryGate__xdcDup__6__GC0 |           1|      2010|
+|8     |MemoryGate__xdcDup__7__GC0 |           1|      2010|
+|9     |MemoryGate__GC0            |           1|      2010|
+|10    |ConvLayer__GC0             |           1|     12285|
+|11    |LayerTop_v2__GC0           |           1|       259|
++------+---------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 41    
+	   4 Input     32 Bit       Adders := 8     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 28    
+	   2 Input      8 Bit       Adders := 125   
+	   2 Input      6 Bit       Adders := 26    
+	   2 Input      4 Bit       Adders := 49    
++---Registers : 
+	              320 Bit    Registers := 8     
+	               80 Bit    Registers := 8     
+	               64 Bit    Registers := 120   
+	               32 Bit    Registers := 105   
+	               18 Bit    Registers := 8     
+	               16 Bit    Registers := 62    
+	                8 Bit    Registers := 272   
+	                6 Bit    Registers := 8     
+	                4 Bit    Registers := 89    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 749   
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---Muxes : 
+	  10 Input    320 Bit        Muxes := 8     
+	   2 Input     80 Bit        Muxes := 24    
+	   3 Input     80 Bit        Muxes := 16    
+	   3 Input     64 Bit        Muxes := 120   
+	   2 Input     64 Bit        Muxes := 193   
+	   6 Input     64 Bit        Muxes := 56    
+	   4 Input     64 Bit        Muxes := 8     
+	   2 Input     40 Bit        Muxes := 8     
+	   6 Input     40 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 40    
+	   5 Input     32 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     17 Bit        Muxes := 16    
+	   2 Input     16 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 116   
+	   4 Input      8 Bit        Muxes := 16    
+	   6 Input      8 Bit        Muxes := 8     
+	   5 Input      8 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 26    
+	   2 Input      4 Bit        Muxes := 25    
+	   3 Input      4 Bit        Muxes := 8     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 27    
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 25    
+	   3 Input      2 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 30    
+	   3 Input      1 Bit        Muxes := 188   
+	   2 Input      1 Bit        Muxes := 435   
+	   4 Input      1 Bit        Muxes := 40    
+	   5 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LayerTop_v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__14 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__15 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__16 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__17 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__18 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__19 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__20 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__21 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftMatrix 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 2     
+Module ShiftArray__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ShiftArray__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module LoadBlock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module ActivePipeline__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ControlPipeline__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+Module add_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	               18 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+Module ReluQuantization 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module ActivePipeline__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ConvUnit_v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	              320 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  10 Input    320 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 7     
+	   6 Input     64 Bit        Muxes := 7     
+	   2 Input     40 Bit        Muxes := 1     
+	   6 Input     40 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate__xdcDup__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate__xdcDup__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate__xdcDup__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate__xdcDup__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray__14 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate__xdcDup__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module PaddingArray 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 3     
+	   3 Input     80 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ActivePipeline 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
+Module ActivePipeline__parameterized0__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module MemoryGate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module ActivePipeline__parameterized0__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module ControlPipeline__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+Module ControlPipeline 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+Module ActivePipeline__parameterized0__32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module ActivePipeline__parameterized0__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf__xdcDup__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf__xdcDup__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf__xdcDup__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf__xdcDup__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf__xdcDup__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module IncreaseBuf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 8     
+Module ActivePipeline__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module ConvLayer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP MULT_BLOCK.genblk1[0].mu_output_result0_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[0].mu_output_result0_reg is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result0_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result0_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[1].mu_output_result0_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[1].mu_output_result0_reg is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result0_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result0_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[2].mu_output_result0_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[2].mu_output_result0_reg is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result0_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result0_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[3].mu_output_result0_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[3].mu_output_result0_reg is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result0_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result0_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[4].mu_output_result0_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[4].mu_output_result0_reg is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result0_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result0_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[0].mu_output_result1_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[0].mu_output_result1_reg is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result1_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result1_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[1].mu_output_result1_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[1].mu_output_result1_reg is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result1_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result1_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[2].mu_output_result1_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[2].mu_output_result1_reg is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result1_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result1_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[3].mu_output_result1_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[3].mu_output_result1_reg is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result1_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result1_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[4].mu_output_result1_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[4].mu_output_result1_reg is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result1_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result1_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[0].mu_output_result2_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[0].mu_output_result2_reg is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result2_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result2_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[1].mu_output_result2_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[1].mu_output_result2_reg is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result2_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result2_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[2].mu_output_result2_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[2].mu_output_result2_reg is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result2_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result2_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[3].mu_output_result2_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[3].mu_output_result2_reg is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result2_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result2_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[4].mu_output_result2_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[4].mu_output_result2_reg is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result2_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result2_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[0].mu_output_result3_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[0].mu_output_result3_reg is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result3_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result3_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[1].mu_output_result3_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[1].mu_output_result3_reg is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result3_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result3_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[2].mu_output_result3_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[2].mu_output_result3_reg is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result3_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result3_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[3].mu_output_result3_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[3].mu_output_result3_reg is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result3_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result3_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[4].mu_output_result3_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[4].mu_output_result3_reg is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result3_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result3_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[0].mu_output_result4_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[0].mu_output_result4_reg is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result4_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[0].mu_output_result4_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[1].mu_output_result4_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[1].mu_output_result4_reg is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result4_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[1].mu_output_result4_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[2].mu_output_result4_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[2].mu_output_result4_reg is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result4_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[2].mu_output_result4_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[3].mu_output_result4_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[3].mu_output_result4_reg is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result4_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[3].mu_output_result4_reg.
+DSP Report: Generating DSP MULT_BLOCK.genblk1[4].mu_output_result4_reg, operation Mode is: (A*B)'.
+DSP Report: register MULT_BLOCK.genblk1[4].mu_output_result4_reg is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result4_reg.
+DSP Report: operator p_0_out is absorbed into DSP MULT_BLOCK.genblk1[4].mu_output_result4_reg.
+INFO: [Synth 8-4471] merging register 'add_pipeline_2_1_reg[31:0]' into 'add_pipeline_2_1_reg[31:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/add_unit.v:129]
+DSP Report: Generating DSP add_pipeline_r_1_2_reg, operation Mode is: (C+A:B)'.
+DSP Report: register add_pipeline_r_1_2_reg is absorbed into DSP add_pipeline_r_1_2_reg.
+DSP Report: operator add_pipeline_r_1_20 is absorbed into DSP add_pipeline_r_1_2_reg.
+DSP Report: Generating DSP add_pipeline_2_2_reg, operation Mode is: (C'+A:B)'.
+DSP Report: register add_pipeline_2_2_reg is absorbed into DSP add_pipeline_2_2_reg.
+DSP Report: register add_pipeline_2_2_reg is absorbed into DSP add_pipeline_2_2_reg.
+DSP Report: operator add_pipeline_2_20 is absorbed into DSP add_pipeline_2_2_reg.
+DSP Report: Generating DSP add_pipeline_3_20, operation Mode is: PCIN+A'':B''.
+DSP Report: register add_pipeline_r_1_1_reg is absorbed into DSP add_pipeline_3_20.
+DSP Report: register add_pipeline_2_1_reg is absorbed into DSP add_pipeline_3_20.
+DSP Report: register add_pipeline_3_20 is absorbed into DSP add_pipeline_3_20.
+DSP Report: register add_pipeline_3_20 is absorbed into DSP add_pipeline_3_20.
+DSP Report: operator add_pipeline_3_20 is absorbed into DSP add_pipeline_3_20.
+DSP Report: Generating DSP add_pipeline_c_1_3_reg, operation Mode is: (C+A:B)'.
+DSP Report: register add_pipeline_c_1_3_reg is absorbed into DSP add_pipeline_c_1_3_reg.
+DSP Report: operator add_pipeline_c_1_30 is absorbed into DSP add_pipeline_c_1_3_reg.
+DSP Report: Generating DSP add_pipeline_r_1_30, operation Mode is: C+A:B.
+DSP Report: operator add_pipeline_r_1_30 is absorbed into DSP add_pipeline_r_1_30.
+DSP Report: Generating DSP add_pipeline_r_1_3_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_pipeline_r_1_3_reg is absorbed into DSP add_pipeline_r_1_3_reg.
+DSP Report: operator add_pipeline_r_1_30 is absorbed into DSP add_pipeline_r_1_3_reg.
+DSP Report: Generating DSP add_pipeline_2_3_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_pipeline_2_3_reg is absorbed into DSP add_pipeline_2_3_reg.
+DSP Report: operator add_pipeline_2_30 is absorbed into DSP add_pipeline_2_3_reg.
+DSP Report: Generating DSP add_pipeline_3_30, operation Mode is: PCIN+A:B.
+DSP Report: operator add_pipeline_3_30 is absorbed into DSP add_pipeline_3_30.
+DSP Report: Generating DSP add_pipeline_r_1_40, operation Mode is: C+A:B.
+DSP Report: operator add_pipeline_r_1_40 is absorbed into DSP add_pipeline_r_1_40.
+DSP Report: Generating DSP add_pipeline_r_1_4_reg, operation Mode is: (PCIN+A:B+C)'.
+DSP Report: register add_pipeline_r_1_4_reg is absorbed into DSP add_pipeline_r_1_4_reg.
+DSP Report: operator add_pipeline_r_1_40 is absorbed into DSP add_pipeline_r_1_4_reg.
+DSP Report: Generating DSP add_pipeline_c_1_40, operation Mode is: C+A:B.
+DSP Report: operator add_pipeline_c_1_40 is absorbed into DSP add_pipeline_c_1_40.
+DSP Report: Generating DSP add_pipeline_c_1_4_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_pipeline_c_1_4_reg is absorbed into DSP add_pipeline_c_1_4_reg.
+DSP Report: operator add_pipeline_c_1_40 is absorbed into DSP add_pipeline_c_1_4_reg.
+DSP Report: Generating DSP add_pipeline_2_4_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_pipeline_2_4_reg is absorbed into DSP add_pipeline_2_4_reg.
+DSP Report: operator add_pipeline_2_40 is absorbed into DSP add_pipeline_2_4_reg.
+DSP Report: Generating DSP add_pipeline_3_40, operation Mode is: PCIN+A:B.
+DSP Report: operator add_pipeline_3_40 is absorbed into DSP add_pipeline_3_40.
+DSP Report: Generating DSP add_pipeline_c_1_50, operation Mode is: C+A:B.
+DSP Report: operator add_pipeline_c_1_50 is absorbed into DSP add_pipeline_c_1_50.
+DSP Report: Generating DSP add_pipeline_c_1_5_reg, operation Mode is: (PCIN+A:B+C)'.
+DSP Report: register add_pipeline_c_1_5_reg is absorbed into DSP add_pipeline_c_1_5_reg.
+DSP Report: operator add_pipeline_c_1_50 is absorbed into DSP add_pipeline_c_1_5_reg.
+DSP Report: Generating DSP add_pipeline_r_1_50, operation Mode is: C+A:B.
+DSP Report: operator add_pipeline_r_1_50 is absorbed into DSP add_pipeline_r_1_50.
+DSP Report: Generating DSP add_pipeline_r_1_50, operation Mode is: PCIN+A:B+C.
+DSP Report: operator add_pipeline_r_1_50 is absorbed into DSP add_pipeline_r_1_50.
+DSP Report: Generating DSP add_pipeline_r_1_5_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_pipeline_r_1_5_reg is absorbed into DSP add_pipeline_r_1_5_reg.
+DSP Report: operator add_pipeline_r_1_50 is absorbed into DSP add_pipeline_r_1_5_reg.
+DSP Report: Generating DSP add_pipeline_2_5_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_pipeline_2_5_reg is absorbed into DSP add_pipeline_2_5_reg.
+DSP Report: operator add_pipeline_2_50 is absorbed into DSP add_pipeline_2_5_reg.
+DSP Report: Generating DSP add_pipeline_3_5_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_pipeline_3_5_reg is absorbed into DSP add_pipeline_3_5_reg.
+DSP Report: operator add_pipeline_3_50 is absorbed into DSP add_pipeline_3_5_reg.
+DSP Report: Generating DSP delta_q0, operation Mode is: C-(A:0x0):B.
+DSP Report: operator delta_q0 is absorbed into DSP delta_q0.
+DSP Report: Generating DSP delta_q_reg, operation Mode is: (PCIN+(A:0x0):B)'.
+DSP Report: register delta_q_reg is absorbed into DSP delta_q_reg.
+DSP Report: operator delta_q0 is absorbed into DSP delta_q_reg.
+INFO: [Synth 8-4471] merging register 'x_index_reg[7:0]' into 'x_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:641]
+INFO: [Synth 8-4471] merging register 'y_index_reg[7:0]' into 'y_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:642]
+INFO: [Synth 8-4471] merging register 'y_index_reg[7:0]' into 'y_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:642]
+INFO: [Synth 8-4471] merging register 'y_index_reg[7:0]' into 'y_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:642]
+INFO: [Synth 8-4471] merging register 'slow_start_count_reg[1][3:0]' into 'slow_start_count_reg[1][3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:460]
+INFO: [Synth 8-4471] merging register 'slow_start_count_reg[0][3:0]' into 'slow_start_count_reg[0][3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:460]
+INFO: [Synth 8-4471] merging register 'x_index_reg[7:0]' into 'x_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:641]
+INFO: [Synth 8-4471] merging register 'y_index_reg[7:0]' into 'y_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:642]
+INFO: [Synth 8-4471] merging register 'x_index_reg[7:0]' into 'x_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:641]
+INFO: [Synth 8-4471] merging register 'x_index_reg[7:0]' into 'x_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvUnit_v2.v:641]
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'padding_reg[3:0]' into 'padding_reg[3:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:428]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+INFO: [Synth 8-4471] merging register 'kernel_size_reg[7:0]' into 'kernel_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:430]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/PreLoader.v:429]
+DSP Report: Generating DSP kernel_max_num_reg, operation Mode is: (C+1)'.
+DSP Report: register kernel_max_num_reg is absorbed into DSP kernel_max_num_reg.
+DSP Report: operator kernel_max_num0 is absorbed into DSP kernel_max_num_reg.
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:918]
+INFO: [Synth 8-4471] merging register 'input_size_reg[7:0]' into 'input_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:918]
+INFO: [Synth 8-4471] merging register 'output_size_reg[7:0]' into 'output_size_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:922]
+INFO: [Synth 8-4471] merging register 'kernel_load_index_reg[7:0]' into 'kernel_load_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:486]
+INFO: [Synth 8-4471] merging register 'input_chan_count_reg[15:0]' into 'input_chan_count_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:643]
+INFO: [Synth 8-4471] merging register 'kernel_load_count_reg[7:0]' into 'kernel_load_count_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:521]
+INFO: [Synth 8-4471] merging register 'act_load_count_reg[15:0]' into 'act_load_count_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:548]
+INFO: [Synth 8-4471] merging register 'input_chan_count_reg[15:0]' into 'input_chan_count_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:643]
+INFO: [Synth 8-4471] merging register 'read_count_reg[15:0]' into 'read_count_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:722]
+INFO: [Synth 8-4471] merging register 'output_chan_count_reg[15:0]' into 'output_chan_count_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:673]
+INFO: [Synth 8-4471] merging register 'input_channel_reg[15:0]' into 'input_channel_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:915]
+INFO: [Synth 8-4471] merging register 'read_index_reg[7:0]' into 'read_index_reg[7:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:752]
+INFO: [Synth 8-4471] merging register 'output_chan_count_reg[15:0]' into 'output_chan_count_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:673]
+INFO: [Synth 8-4471] merging register 'input_total_size_reg[15:0]' into 'input_total_size_reg[15:0]' [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:327]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.srcs/sources_1/imports/new/ConvLayer.v:636]
+DSP Report: Generating DSP cl_output_addrb_kernel4, operation Mode is: (D'+A2)*B2.
+DSP Report: register kernel_load_index_reg is absorbed into DSP cl_output_addrb_kernel4.
+DSP Report: register input_channel_reg is absorbed into DSP cl_output_addrb_kernel4.
+DSP Report: register output_chan_count_reg is absorbed into DSP cl_output_addrb_kernel4.
+DSP Report: operator cl_output_addrb_kernel4 is absorbed into DSP cl_output_addrb_kernel4.
+DSP Report: operator cl_output_addrb_kernel5 is absorbed into DSP cl_output_addrb_kernel4.
+DSP Report: Generating DSP cl_output_addrb_kernel3, operation Mode is: A*B.
+DSP Report: operator cl_output_addrb_kernel3 is absorbed into DSP cl_output_addrb_kernel3.
+DSP Report: operator cl_output_addrb_kernel3 is absorbed into DSP cl_output_addrb_kernel3.
+DSP Report: Generating DSP cl_output_addrb_kernel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator cl_output_addrb_kernel3 is absorbed into DSP cl_output_addrb_kernel3.
+DSP Report: operator cl_output_addrb_kernel3 is absorbed into DSP cl_output_addrb_kernel3.
+DSP Report: Generating DSP cl_output_addra_act_reg, operation Mode is: (C'+(D'+A2)*B2)'.
+DSP Report: register output_map_size_reg is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: register read_count_reg is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: register output_chan_count_reg is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: register read_index_reg is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: register cl_output_addra_act_reg is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: operator cl_output_addra_act0 is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: operator cl_output_addra_act1 is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: operator cl_output_addra_act2 is absorbed into DSP cl_output_addra_act_reg.
+DSP Report: Generating DSP cl_output_addrb_act2, operation Mode is: A2*B2.
+DSP Report: register input_map_size_reg is absorbed into DSP cl_output_addrb_act2.
+DSP Report: register input_chan_count_reg is absorbed into DSP cl_output_addrb_act2.
+DSP Report: operator cl_output_addrb_act2 is absorbed into DSP cl_output_addrb_act2.
+DSP Report: Generating DSP cl_output_addrb_act_reg, operation Mode is: (PCIN+(A:0x0):B2+C')'.
+DSP Report: register act_load_count_reg is absorbed into DSP cl_output_addrb_act_reg.
+DSP Report: register input_baseaddr_reg is absorbed into DSP cl_output_addrb_act_reg.
+DSP Report: register cl_output_addrb_act_reg is absorbed into DSP cl_output_addrb_act_reg.
+DSP Report: operator cl_output_addrb_act0 is absorbed into DSP cl_output_addrb_act_reg.
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[15]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[16]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[17]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[18]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[19]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[20]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[21]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[22]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[23]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[24]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[25]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[26]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[27]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[28]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[29]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[30]' (FDE) to 'ConvUnit_v2:/u_add_unit/add_pipeline_r_1_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[15]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[16]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[17]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[18]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[19]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[20]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[21]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[22]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[23]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[24]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[25]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[26]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[27]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[28]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[29]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[30]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_2_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/load_wait_time_reg[0]' (FDRE) to 'ConvUnit_v2:/load_wait_time_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\load_wait_time_reg[1] )
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[15]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[16]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[17]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[18]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[19]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[20]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[21]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[22]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[23]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[24]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[25]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[26]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[27]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[28]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[29]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[30]' (FD) to 'ConvUnit_v2:/u_add_unit/add_pipeline_3_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[0]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[6]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[7]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[8]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[9]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[10]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[11]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[12]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[13]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[14]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/u_ControlPipeline/cp_output_s1_reg[15]' (FDR) to 'ConvUnit_v2:/calculation_state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\calculation_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\raddr_reg[16] )
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[17]' (FDRE) to 'ConvUnit_v2:/raddr_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[18]' (FDRE) to 'ConvUnit_v2:/raddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[19]' (FDRE) to 'ConvUnit_v2:/raddr_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[20]' (FDRE) to 'ConvUnit_v2:/raddr_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[21]' (FDRE) to 'ConvUnit_v2:/raddr_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[22]' (FDRE) to 'ConvUnit_v2:/raddr_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[23]' (FDRE) to 'ConvUnit_v2:/raddr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[24]' (FDRE) to 'ConvUnit_v2:/raddr_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[25]' (FDRE) to 'ConvUnit_v2:/raddr_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[26]' (FDRE) to 'ConvUnit_v2:/raddr_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[27]' (FDRE) to 'ConvUnit_v2:/raddr_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[28]' (FDRE) to 'ConvUnit_v2:/raddr_reg[29]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[29]' (FDRE) to 'ConvUnit_v2:/raddr_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ConvUnit_v2:/raddr_reg[30]' (FDRE) to 'ConvUnit_v2:/raddr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\raddr_reg[31] )
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/index_width_reg[6]' (FDRE) to 'u_MemoryGate0i_1/index_width_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\index_width_reg[7] )
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/raw_width_reg[6]' (FDRE) to 'u_MemoryGate0i_1/raw_width_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\raw_width_reg[7] )
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[8]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[9]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[10]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[11]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[12]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[13]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[14]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[15]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[16]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[17]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[18]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[19]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[20]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[21]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[22]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[23]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[24]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[25]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[26]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[27]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[28]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[29]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/kernel_addr_reg[30]' (FDR) to 'u_MemoryGate0i_1/kernel_addr_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\kernel_addr_reg[31] )
+INFO: [Synth 8-3886] merging instance 'u_MemoryGate0i_1/state_reg[6]' (FDRE) to 'u_MemoryGate0i_1/state_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\raw_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\kernel_addr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\raw_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\kernel_addr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\raw_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\kernel_addr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\raw_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\kernel_addr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\raw_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\kernel_addr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\raw_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\kernel_addr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\raw_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\kernel_addr_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\index_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/i_4/\output_chan_count_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\output_width_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/i_4/\output_chan_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/i_4/\output_chan_count_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\cal_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\output_map_size_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\kernel_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\output_map_size_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\output_map_size_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\input_map_size_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate7i_8/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate6i_7/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate5i_6/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate4i_5/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate3i_4/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate2i_3/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate1i_2/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_MemoryGate0i_1/\u_PaddingArray/padding_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\u_PaddingArray/padding_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\padding_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\kernel_size_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\load_wait_time_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ConvUnit_v2:/\load_wait_time_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\input_size_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\index_width_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate0i_1/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate1i_2/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate2i_3/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate3i_4/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate4i_5/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate5i_6/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate6i_7/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_MemoryGate7i_8/\real_input_size_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\output_map_size_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ConvLayeri_9/\input_map_size_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1372.055 ; gain = 554.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|mult_unit_v2     | (A*B)'                | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|add_unit         | (C+A:B)'              | 30     | 18     | 48     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|add_unit         | (C'+A:B)'             | 30     | 18     | 48     | -      | 32     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
+|add_unit         | PCIN+A'':B''          | 14     | 18     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|add_unit         | (C+A:B)'              | 30     | 18     | 48     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|add_unit         | C+A:B                 | 30     | 18     | 48     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|add_unit         | (PCIN+A:B)'           | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|add_unit         | (PCIN+A:B)'           | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|add_unit         | PCIN+A:B              | 14     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|add_unit         | C+A:B                 | 30     | 18     | 48     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|add_unit         | (PCIN+A:B+C)'         | 14     | 18     | 48     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|add_unit         | C+A:B                 | 30     | 18     | 48     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|add_unit         | (PCIN+A:B)'           | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|add_unit         | (PCIN+A:B)'           | 14     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|add_unit         | PCIN+A:B              | 14     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|add_unit         | C+A:B                 | 30     | 18     | 48     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|add_unit         | (PCIN+A:B+C)'         | 14     | 18     | 48     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|add_unit         | C+A:B                 | 30     | 18     | 48     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|add_unit         | PCIN+A:B+C            | 14     | 18     | 48     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|add_unit         | (PCIN+A:B)'           | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|add_unit         | (PCIN+A:B)'           | 14     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|add_unit         | (PCIN+A:B)'           | 14     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|ReluQuantization | C-(A:0x0):B           | 30     | 4      | 4      | -      | 8      | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|ReluQuantization | (PCIN+(A:0x0):B)'     | 30     | 4      | -      | -      | 8      | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|MemoryGate       | (C+1)'                | -      | -      | 8      | -      | 8      | -    | -    | 0    | -    | -     | 0    | 1    | 
+|LayerTop_v2      | (D'+A2)*B2            | 8      | 16     | -      | 16     | 33     | 1    | 1    | -    | 1    | 0     | 0    | 0    | 
+|LayerTop_v2      | A*B                   | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LayerTop_v2      | (PCIN>>17)+A*B        | 16     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ConvLayer        | (C'+(D'+A2)*B2)'      | 8      | 16     | 16     | 16     | 32     | 1    | 1    | 1    | 1    | 0     | 0    | 1    | 
+|ConvLayer        | A2*B2                 | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|LayerTop_v2      | (PCIN+(A:0x0):B2+C')' | 30     | 16     | 32     | -      | -1     | 0    | 1    | 1    | -    | -     | 0    | 1    | 
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |ConvUnit_v2                |           8|      5326|
+|2     |MemoryGate__xdcDup__1__GC0 |           1|       718|
+|3     |MemoryGate__xdcDup__2__GC0 |           1|       701|
+|4     |MemoryGate__xdcDup__3__GC0 |           1|       701|
+|5     |MemoryGate__xdcDup__4__GC0 |           1|       701|
+|6     |MemoryGate__xdcDup__5__GC0 |           1|       701|
+|7     |MemoryGate__xdcDup__6__GC0 |           1|       701|
+|8     |MemoryGate__xdcDup__7__GC0 |           1|       701|
+|9     |MemoryGate__GC0            |           1|       701|
+|10    |ConvLayer__GC0             |           1|      5027|
+|11    |LayerTop_v2__GC0           |           1|       241|
++------+---------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1372.055 ; gain = 554.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ConvUnit_v2:/\input_size_reg[0] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1417.047 ; gain = 599.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |ConvUnit_v2                |           8|      5282|
+|2     |MemoryGate__xdcDup__1__GC0 |           1|       718|
+|3     |MemoryGate__xdcDup__2__GC0 |           1|       701|
+|4     |MemoryGate__xdcDup__3__GC0 |           1|       701|
+|5     |MemoryGate__xdcDup__4__GC0 |           1|       701|
+|6     |MemoryGate__xdcDup__5__GC0 |           1|       701|
+|7     |MemoryGate__xdcDup__6__GC0 |           1|       701|
+|8     |MemoryGate__xdcDup__7__GC0 |           1|       701|
+|9     |MemoryGate__GC0            |           1|       701|
+|10    |ConvLayer__GC0             |           1|      5027|
+|11    |LayerTop_v2__GC0           |           1|       241|
++------+---------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:21 . Memory (MB): peak = 1498.652 ; gain = 680.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1521.832 ; gain = 703.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1521.832 ; gain = 703.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 1524.973 ; gain = 707.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 1524.973 ; gain = 707.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 1524.973 ; gain = 707.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:38 . Memory (MB): peak = 1524.973 ; gain = 707.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate2/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_cal_fin_pipe/whatever[15].ap_output_conf_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|LayerTop_v2 | u_ConvLayer/u_MemoryGate3/u_ActivePipeline/whatever[3].ap_output_conf_reg[3]               | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |blk_mem_kernel        |         1|
+|2     |blk_mem_act           |         2|
+|3     |blk_mem_cl_act_buf    |         1|
+|4     |blk_mem_cl_kernel_buf |         8|
+|5     |blk_mem_increase_buf  |         8|
+|6     |blk_mem_input_buffer  |         8|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |blk_mem_act               |     1|
+|2     |blk_mem_act__2            |     1|
+|3     |blk_mem_cl_act_buf        |     1|
+|4     |blk_mem_cl_kernel_buf     |     1|
+|5     |blk_mem_cl_kernel_buf__10 |     1|
+|6     |blk_mem_cl_kernel_buf__11 |     1|
+|7     |blk_mem_cl_kernel_buf__12 |     1|
+|8     |blk_mem_cl_kernel_buf__13 |     1|
+|9     |blk_mem_cl_kernel_buf__14 |     1|
+|10    |blk_mem_cl_kernel_buf__8  |     1|
+|11    |blk_mem_cl_kernel_buf__9  |     1|
+|12    |blk_mem_increase_buf      |     1|
+|13    |blk_mem_increase_buf__10  |     1|
+|14    |blk_mem_increase_buf__11  |     1|
+|15    |blk_mem_increase_buf__12  |     1|
+|16    |blk_mem_increase_buf__13  |     1|
+|17    |blk_mem_increase_buf__14  |     1|
+|18    |blk_mem_increase_buf__8   |     1|
+|19    |blk_mem_increase_buf__9   |     1|
+|20    |blk_mem_input_buffer      |     1|
+|21    |blk_mem_input_buffer__10  |     1|
+|22    |blk_mem_input_buffer__11  |     1|
+|23    |blk_mem_input_buffer__12  |     1|
+|24    |blk_mem_input_buffer__13  |     1|
+|25    |blk_mem_input_buffer__14  |     1|
+|26    |blk_mem_input_buffer__8   |     1|
+|27    |blk_mem_input_buffer__9   |     1|
+|28    |blk_mem_kernel            |     1|
+|29    |BUFG                      |    12|
+|30    |CARRY4                    |   933|
+|31    |DSP48E1_1                 |    32|
+|32    |DSP48E1_11                |     1|
+|33    |DSP48E1_12                |   200|
+|34    |DSP48E1_13                |     8|
+|35    |DSP48E1_14                |     1|
+|36    |DSP48E1_2                 |    64|
+|37    |DSP48E1_3                 |     8|
+|38    |DSP48E1_4                 |    48|
+|39    |DSP48E1_5                 |    16|
+|40    |DSP48E1_6                 |    16|
+|41    |DSP48E1_7                 |     1|
+|42    |DSP48E1_8                 |     1|
+|43    |DSP48E1_9                 |     1|
+|44    |LUT1                      |   166|
+|45    |LUT2                      |  2728|
+|46    |LUT3                      |  2744|
+|47    |LUT4                      |  1299|
+|48    |LUT5                      |  3739|
+|49    |LUT6                      |  2951|
+|50    |SRL16E                    |     9|
+|51    |FDRE                      | 12550|
+|52    |LD                        |  2128|
+|53    |IBUF                      |    16|
+|54    |OBUF                      |    65|
++------+--------------------------+------+
+
+Report Instance Areas: 
++------+---------------------------+-----------------------------------+------+
+|      |Instance                   |Module                             |Cells |
++------+---------------------------+-----------------------------------+------+
+|1     |top                        |                                   | 31785|
+|2     |  u_ConvLayer              |ConvLayer                          | 31479|
+|3     |    u_ActivePipeline       |ActivePipeline__parameterized0     |     5|
+|4     |    u_IncreaseBuf0         |IncreaseBuf__xdcDup__1             |   413|
+|5     |      u_ActivePipeline     |ActivePipeline__parameterized0_226 |     5|
+|6     |    u_IncreaseBuf1         |IncreaseBuf__xdcDup__2             |   412|
+|7     |      u_ActivePipeline     |ActivePipeline__parameterized0_225 |     5|
+|8     |    u_IncreaseBuf2         |IncreaseBuf__xdcDup__3             |   412|
+|9     |      u_ActivePipeline     |ActivePipeline__parameterized0_224 |     5|
+|10    |    u_IncreaseBuf3         |IncreaseBuf__xdcDup__4             |   541|
+|11    |      u_ActivePipeline     |ActivePipeline__parameterized0_223 |     5|
+|12    |    u_IncreaseBuf4         |IncreaseBuf__xdcDup__5             |   412|
+|13    |      u_ActivePipeline     |ActivePipeline__parameterized0_222 |     5|
+|14    |    u_IncreaseBuf5         |IncreaseBuf__xdcDup__6             |   412|
+|15    |      u_ActivePipeline     |ActivePipeline__parameterized0_221 |     5|
+|16    |    u_IncreaseBuf6         |IncreaseBuf__xdcDup__7             |   413|
+|17    |      u_ActivePipeline     |ActivePipeline__parameterized0_220 |     5|
+|18    |    u_IncreaseBuf7         |IncreaseBuf                        |   483|
+|19    |      u_ActivePipeline     |ActivePipeline__parameterized0_219 |     5|
+|20    |    u_MemoryGate0          |MemoryGate__xdcDup__1              |  3443|
+|21    |      u_ConvUnit_v2        |ConvUnit_v2_191                    |  2861|
+|22    |        u_ControlPipeline  |ControlPipeline_196                |   309|
+|23    |        u_ReluQuantization |ReluQuantization_197               |   205|
+|24    |        u_ShiftMatrix      |ShiftMatrix_198                    |   921|
+|25    |          u0               |ShiftArray_209                     |   112|
+|26    |          u1               |ShiftArray_210                     |   112|
+|27    |          u2               |ShiftArray_211                     |   112|
+|28    |          u3               |ShiftArray_212                     |   112|
+|29    |          u4               |ShiftArray_213                     |   112|
+|30    |          u5               |ShiftArray_214                     |    72|
+|31    |          u6               |ShiftArray_215                     |    73|
+|32    |          u7               |ShiftArray_216                     |    72|
+|33    |          u8               |ShiftArray_217                     |    72|
+|34    |          u9               |ShiftArray_218                     |    72|
+|35    |        u_add_unit         |add_unit_199                       |    27|
+|36    |        u_cal_fin_pipe     |ActivePipeline_200                 |    31|
+|37    |        u_cal_pipeline     |ActivePipeline_201                 |     4|
+|38    |        u_load_buf         |LoadBlock_202                      |   364|
+|39    |          u0               |ShiftArray_204                     |    69|
+|40    |          u1               |ShiftArray_205                     |    65|
+|41    |          u2               |ShiftArray_206                     |    64|
+|42    |          u3               |ShiftArray_207                     |    65|
+|43    |          u4               |ShiftArray_208                     |    65|
+|44    |        u_mult_unit_v2     |mult_unit_v2_203                   |    25|
+|45    |      u_PaddingArray       |PaddingArray_192                   |   208|
+|46    |      u_act_pipeline       |ActivePipeline_193                 |    15|
+|47    |      u_kernel_pipeline    |ActivePipeline_194                 |    13|
+|48    |      u_tvalid             |ActivePipeline_195                 |    29|
+|49    |    u_MemoryGate1          |MemoryGate__xdcDup__2              |  3402|
+|50    |      u_ConvUnit_v2        |ConvUnit_v2_163                    |  2838|
+|51    |        u_ControlPipeline  |ControlPipeline_168                |   309|
+|52    |        u_ReluQuantization |ReluQuantization_169               |   205|
+|53    |        u_ShiftMatrix      |ShiftMatrix_170                    |   920|
+|54    |          u0               |ShiftArray_181                     |   112|
+|55    |          u1               |ShiftArray_182                     |   112|
+|56    |          u2               |ShiftArray_183                     |   112|
+|57    |          u3               |ShiftArray_184                     |   112|
+|58    |          u4               |ShiftArray_185                     |   112|
+|59    |          u5               |ShiftArray_186                     |    72|
+|60    |          u6               |ShiftArray_187                     |    72|
+|61    |          u7               |ShiftArray_188                     |    72|
+|62    |          u8               |ShiftArray_189                     |    72|
+|63    |          u9               |ShiftArray_190                     |    72|
+|64    |        u_add_unit         |add_unit_171                       |    27|
+|65    |        u_cal_fin_pipe     |ActivePipeline_172                 |     9|
+|66    |        u_cal_pipeline     |ActivePipeline_173                 |     4|
+|67    |        u_load_buf         |LoadBlock_174                      |   364|
+|68    |          u0               |ShiftArray_176                     |    69|
+|69    |          u1               |ShiftArray_177                     |    65|
+|70    |          u2               |ShiftArray_178                     |    64|
+|71    |          u3               |ShiftArray_179                     |    65|
+|72    |          u4               |ShiftArray_180                     |    65|
+|73    |        u_mult_unit_v2     |mult_unit_v2_175                   |    25|
+|74    |      u_PaddingArray       |PaddingArray_164                   |   208|
+|75    |      u_act_pipeline       |ActivePipeline_165                 |    15|
+|76    |      u_kernel_pipeline    |ActivePipeline_166                 |    13|
+|77    |      u_tvalid             |ActivePipeline_167                 |    29|
+|78    |    u_MemoryGate2          |MemoryGate__xdcDup__3              |  3404|
+|79    |      u_ConvUnit_v2        |ConvUnit_v2_135                    |  2838|
+|80    |        u_ControlPipeline  |ControlPipeline_140                |   309|
+|81    |        u_ReluQuantization |ReluQuantization_141               |   205|
+|82    |        u_ShiftMatrix      |ShiftMatrix_142                    |   920|
+|83    |          u0               |ShiftArray_153                     |   112|
+|84    |          u1               |ShiftArray_154                     |   112|
+|85    |          u2               |ShiftArray_155                     |   112|
+|86    |          u3               |ShiftArray_156                     |   112|
+|87    |          u4               |ShiftArray_157                     |   112|
+|88    |          u5               |ShiftArray_158                     |    72|
+|89    |          u6               |ShiftArray_159                     |    72|
+|90    |          u7               |ShiftArray_160                     |    72|
+|91    |          u8               |ShiftArray_161                     |    72|
+|92    |          u9               |ShiftArray_162                     |    72|
+|93    |        u_add_unit         |add_unit_143                       |    27|
+|94    |        u_cal_fin_pipe     |ActivePipeline_144                 |     9|
+|95    |        u_cal_pipeline     |ActivePipeline_145                 |     4|
+|96    |        u_load_buf         |LoadBlock_146                      |   364|
+|97    |          u0               |ShiftArray_148                     |    69|
+|98    |          u1               |ShiftArray_149                     |    65|
+|99    |          u2               |ShiftArray_150                     |    64|
+|100   |          u3               |ShiftArray_151                     |    65|
+|101   |          u4               |ShiftArray_152                     |    65|
+|102   |        u_mult_unit_v2     |mult_unit_v2_147                   |    25|
+|103   |      u_PaddingArray       |PaddingArray_136                   |   208|
+|104   |      u_act_pipeline       |ActivePipeline_137                 |    15|
+|105   |      u_kernel_pipeline    |ActivePipeline_138                 |    13|
+|106   |      u_tvalid             |ActivePipeline_139                 |    29|
+|107   |    u_MemoryGate3          |MemoryGate__xdcDup__4              |  3408|
+|108   |      u_ActivePipeline     |ActivePipeline__parameterized0_106 |     6|
+|109   |      u_ConvUnit_v2        |ConvUnit_v2_107                    |  2838|
+|110   |        u_ControlPipeline  |ControlPipeline_112                |   309|
+|111   |        u_ReluQuantization |ReluQuantization_113               |   205|
+|112   |        u_ShiftMatrix      |ShiftMatrix_114                    |   920|
+|113   |          u0               |ShiftArray_125                     |   112|
+|114   |          u1               |ShiftArray_126                     |   112|
+|115   |          u2               |ShiftArray_127                     |   112|
+|116   |          u3               |ShiftArray_128                     |   112|
+|117   |          u4               |ShiftArray_129                     |   112|
+|118   |          u5               |ShiftArray_130                     |    72|
+|119   |          u6               |ShiftArray_131                     |    72|
+|120   |          u7               |ShiftArray_132                     |    72|
+|121   |          u8               |ShiftArray_133                     |    72|
+|122   |          u9               |ShiftArray_134                     |    72|
+|123   |        u_add_unit         |add_unit_115                       |    27|
+|124   |        u_cal_fin_pipe     |ActivePipeline_116                 |     9|
+|125   |        u_cal_pipeline     |ActivePipeline_117                 |     4|
+|126   |        u_load_buf         |LoadBlock_118                      |   364|
+|127   |          u0               |ShiftArray_120                     |    69|
+|128   |          u1               |ShiftArray_121                     |    65|
+|129   |          u2               |ShiftArray_122                     |    64|
+|130   |          u3               |ShiftArray_123                     |    65|
+|131   |          u4               |ShiftArray_124                     |    65|
+|132   |        u_mult_unit_v2     |mult_unit_v2_119                   |    25|
+|133   |      u_PaddingArray       |PaddingArray_108                   |   208|
+|134   |      u_act_pipeline       |ActivePipeline_109                 |    15|
+|135   |      u_kernel_pipeline    |ActivePipeline_110                 |    13|
+|136   |      u_tvalid             |ActivePipeline_111                 |    29|
+|137   |    u_MemoryGate4          |MemoryGate__xdcDup__5              |  3402|
+|138   |      u_ConvUnit_v2        |ConvUnit_v2_78                     |  2838|
+|139   |        u_ControlPipeline  |ControlPipeline_83                 |   309|
+|140   |        u_ReluQuantization |ReluQuantization_84                |   205|
+|141   |        u_ShiftMatrix      |ShiftMatrix_85                     |   920|
+|142   |          u0               |ShiftArray_96                      |   112|
+|143   |          u1               |ShiftArray_97                      |   112|
+|144   |          u2               |ShiftArray_98                      |   112|
+|145   |          u3               |ShiftArray_99                      |   112|
+|146   |          u4               |ShiftArray_100                     |   112|
+|147   |          u5               |ShiftArray_101                     |    72|
+|148   |          u6               |ShiftArray_102                     |    72|
+|149   |          u7               |ShiftArray_103                     |    72|
+|150   |          u8               |ShiftArray_104                     |    72|
+|151   |          u9               |ShiftArray_105                     |    72|
+|152   |        u_add_unit         |add_unit_86                        |    27|
+|153   |        u_cal_fin_pipe     |ActivePipeline_87                  |     9|
+|154   |        u_cal_pipeline     |ActivePipeline_88                  |     4|
+|155   |        u_load_buf         |LoadBlock_89                       |   364|
+|156   |          u0               |ShiftArray_91                      |    69|
+|157   |          u1               |ShiftArray_92                      |    65|
+|158   |          u2               |ShiftArray_93                      |    64|
+|159   |          u3               |ShiftArray_94                      |    65|
+|160   |          u4               |ShiftArray_95                      |    65|
+|161   |        u_mult_unit_v2     |mult_unit_v2_90                    |    25|
+|162   |      u_PaddingArray       |PaddingArray_79                    |   208|
+|163   |      u_act_pipeline       |ActivePipeline_80                  |    15|
+|164   |      u_kernel_pipeline    |ActivePipeline_81                  |    13|
+|165   |      u_tvalid             |ActivePipeline_82                  |    29|
+|166   |    u_MemoryGate5          |MemoryGate__xdcDup__6              |  3402|
+|167   |      u_ConvUnit_v2        |ConvUnit_v2_50                     |  2838|
+|168   |        u_ControlPipeline  |ControlPipeline_55                 |   309|
+|169   |        u_ReluQuantization |ReluQuantization_56                |   205|
+|170   |        u_ShiftMatrix      |ShiftMatrix_57                     |   920|
+|171   |          u0               |ShiftArray_68                      |   112|
+|172   |          u1               |ShiftArray_69                      |   112|
+|173   |          u2               |ShiftArray_70                      |   112|
+|174   |          u3               |ShiftArray_71                      |   112|
+|175   |          u4               |ShiftArray_72                      |   112|
+|176   |          u5               |ShiftArray_73                      |    72|
+|177   |          u6               |ShiftArray_74                      |    72|
+|178   |          u7               |ShiftArray_75                      |    72|
+|179   |          u8               |ShiftArray_76                      |    72|
+|180   |          u9               |ShiftArray_77                      |    72|
+|181   |        u_add_unit         |add_unit_58                        |    27|
+|182   |        u_cal_fin_pipe     |ActivePipeline_59                  |     9|
+|183   |        u_cal_pipeline     |ActivePipeline_60                  |     4|
+|184   |        u_load_buf         |LoadBlock_61                       |   364|
+|185   |          u0               |ShiftArray_63                      |    69|
+|186   |          u1               |ShiftArray_64                      |    65|
+|187   |          u2               |ShiftArray_65                      |    64|
+|188   |          u3               |ShiftArray_66                      |    65|
+|189   |          u4               |ShiftArray_67                      |    65|
+|190   |        u_mult_unit_v2     |mult_unit_v2_62                    |    25|
+|191   |      u_PaddingArray       |PaddingArray_51                    |   208|
+|192   |      u_act_pipeline       |ActivePipeline_52                  |    15|
+|193   |      u_kernel_pipeline    |ActivePipeline_53                  |    13|
+|194   |      u_tvalid             |ActivePipeline_54                  |    29|
+|195   |    u_MemoryGate6          |MemoryGate__xdcDup__7              |  3402|
+|196   |      u_ConvUnit_v2        |ConvUnit_v2_22                     |  2838|
+|197   |        u_ControlPipeline  |ControlPipeline_27                 |   309|
+|198   |        u_ReluQuantization |ReluQuantization_28                |   205|
+|199   |        u_ShiftMatrix      |ShiftMatrix_29                     |   920|
+|200   |          u0               |ShiftArray_40                      |   112|
+|201   |          u1               |ShiftArray_41                      |   112|
+|202   |          u2               |ShiftArray_42                      |   112|
+|203   |          u3               |ShiftArray_43                      |   112|
+|204   |          u4               |ShiftArray_44                      |   112|
+|205   |          u5               |ShiftArray_45                      |    72|
+|206   |          u6               |ShiftArray_46                      |    72|
+|207   |          u7               |ShiftArray_47                      |    72|
+|208   |          u8               |ShiftArray_48                      |    72|
+|209   |          u9               |ShiftArray_49                      |    72|
+|210   |        u_add_unit         |add_unit_30                        |    27|
+|211   |        u_cal_fin_pipe     |ActivePipeline_31                  |     9|
+|212   |        u_cal_pipeline     |ActivePipeline_32                  |     4|
+|213   |        u_load_buf         |LoadBlock_33                       |   364|
+|214   |          u0               |ShiftArray_35                      |    69|
+|215   |          u1               |ShiftArray_36                      |    65|
+|216   |          u2               |ShiftArray_37                      |    64|
+|217   |          u3               |ShiftArray_38                      |    65|
+|218   |          u4               |ShiftArray_39                      |    65|
+|219   |        u_mult_unit_v2     |mult_unit_v2_34                    |    25|
+|220   |      u_PaddingArray       |PaddingArray_23                    |   208|
+|221   |      u_act_pipeline       |ActivePipeline_24                  |    15|
+|222   |      u_kernel_pipeline    |ActivePipeline_25                  |    13|
+|223   |      u_tvalid             |ActivePipeline_26                  |    29|
+|224   |    u_MemoryGate7          |MemoryGate                         |  3403|
+|225   |      u_ConvUnit_v2        |ConvUnit_v2                        |  2838|
+|226   |        u_ControlPipeline  |ControlPipeline_5                  |   309|
+|227   |        u_ReluQuantization |ReluQuantization                   |   205|
+|228   |        u_ShiftMatrix      |ShiftMatrix                        |   920|
+|229   |          u0               |ShiftArray_12                      |   112|
+|230   |          u1               |ShiftArray_13                      |   112|
+|231   |          u2               |ShiftArray_14                      |   112|
+|232   |          u3               |ShiftArray_15                      |   112|
+|233   |          u4               |ShiftArray_16                      |   112|
+|234   |          u5               |ShiftArray_17                      |    72|
+|235   |          u6               |ShiftArray_18                      |    72|
+|236   |          u7               |ShiftArray_19                      |    72|
+|237   |          u8               |ShiftArray_20                      |    72|
+|238   |          u9               |ShiftArray_21                      |    72|
+|239   |        u_add_unit         |add_unit                           |    27|
+|240   |        u_cal_fin_pipe     |ActivePipeline_6                   |     9|
+|241   |        u_cal_pipeline     |ActivePipeline_7                   |     4|
+|242   |        u_load_buf         |LoadBlock                          |   364|
+|243   |          u0               |ShiftArray                         |    69|
+|244   |          u1               |ShiftArray_8                       |    65|
+|245   |          u2               |ShiftArray_9                       |    64|
+|246   |          u3               |ShiftArray_10                      |    65|
+|247   |          u4               |ShiftArray_11                      |    65|
+|248   |        u_mult_unit_v2     |mult_unit_v2                       |    25|
+|249   |      u_PaddingArray       |PaddingArray                       |   208|
+|250   |      u_act_pipeline       |ActivePipeline                     |    15|
+|251   |      u_kernel_pipeline    |ActivePipeline_3                   |    13|
+|252   |      u_tvalid             |ActivePipeline_4                   |    29|
+|253   |    u_act_load_en          |ActivePipeline__parameterized0_0   |     4|
+|254   |    u_kernel_count         |ControlPipeline                    |     6|
+|255   |    u_kernel_index         |ControlPipeline_1                  |    25|
+|256   |    u_read_en              |ActivePipeline__parameterized0_2   |     1|
++------+---------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:38 . Memory (MB): peak = 1524.973 ; gain = 707.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:28 . Memory (MB): peak = 1524.973 ; gain = 457.621
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1524.973 ; gain = 707.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.871 . Memory (MB): peak = 1550.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3458 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1579.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2128 instances were transformed.
+  LD => LDCE: 2128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+341 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 1579.129 ; gain = 1121.332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1579.129 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.runs/synth_1/LayerTop_v2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file LayerTop_v2_utilization_synth.rpt -pb LayerTop_v2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 22 23:00:54 2020...

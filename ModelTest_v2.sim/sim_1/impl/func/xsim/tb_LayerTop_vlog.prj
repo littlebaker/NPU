@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_LayerTop_func_impl.v" \
+"../../../../../ModelTest_v2.srcs/sim_1/imports/new/tb_LayerTop.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 22 21:41:39 2020
+# Process ID: 1584
+# Current directory: E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.sim/sim_1/impl/func/xsim
+# Command line: wbtcv.exe -mode batch -source E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.sim/sim_1/impl/func/xsim/xsim.dir/tb_LayerTop_func_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.sim/sim_1/impl/func/xsim/webtalk.log
+# Journal file: E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.sim/sim_1/impl/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/Users/dell/Vivado/ModelTest_v2/ModelTest_v2.sim/sim_1/impl/func/xsim/xsim.dir/tb_LayerTop_func_impl/webtalk/xsim_webtalk.tcl -notrace

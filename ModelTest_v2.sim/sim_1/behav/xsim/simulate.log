@@ -1,0 +1,36 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate0.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate1.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate2.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate3.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate4.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate5.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate6.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_MemoryGate7.u_input_buffer.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_act_buf.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf0.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf2.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf3.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf4.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf5.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf6.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_kernel_buf7.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf0.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf1.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf2.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf3.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf4.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf5.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf6.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_ConvLayer.u_ConvLayer.u_IncreaseBuf7.u_bib.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_ConvLayer.u_blk_mem_kernel.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_ConvLayer.u_blk_mem_act.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_ConvLayer.u_blk_mem_act_write.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.

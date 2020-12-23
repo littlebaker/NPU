@@ -1,0 +1,1510 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 23:06:04 2020
+| Host         : LITTLEBAKER running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file LayerTop_v2_timing_summary_routed.rpt -pb LayerTop_v2_timing_summary_routed.pb -rpx LayerTop_v2_timing_summary_routed.rpx -warn_on_violation
+| Design       : LayerTop_v2
+| Device       : 7z035-ffg676
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate0/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate1/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate2/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate3/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate4/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate5/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate6/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/padding_state_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/padding_state_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/padding_state_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/calculation_state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/calculation_state_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/calculation_state_reg[2]/Q (HIGH)
+
+ There are 200 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/kernel_size_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: u_ConvLayer/u_MemoryGate7/u_tvalid/whatever[2].ap_output_conf_reg[2]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 2128 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 15 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 65 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.842        0.000                      0                43673        0.060        0.000                      0                43673        4.358        0.000                       0                 12986  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock      Waveform(ns)       Period(ns)      Frequency(MHz)
+-----      ------------       ----------      --------------
+input_clk  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+input_clk           1.842        0.000                      0                43673        0.060        0.000                      0                43673        4.358        0.000                       0                 12986  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  input_clk
+  To Clock:  input_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.842ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.060ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.358ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.842ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        8.099ns  (logic 6.893ns (85.114%)  route 1.206ns (14.886%))
+  Logic Levels:           3  (CARRY4=1 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[4])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[4]
+                         net (fo=2, routed)           0.697    11.640    u_ConvLayer/C[4]
+    SLICE_X32Y105        LUT2 (Prop_lut2_I0_O)        0.043    11.683 r  u_ConvLayer/cl_output_addrb_kernel[7]_i_6/O
+                         net (fo=1, routed)           0.000    11.683    u_ConvLayer/cl_output_addrb_kernel[7]_i_6_n_3
+    SLICE_X32Y105        CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    11.975 r  u_ConvLayer/cl_output_addrb_kernel_reg[7]_i_2/O[3]
+                         net (fo=1, routed)           0.000    11.975    u_ConvLayer/cl_output_addrb_kernel0[7]
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[7]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y105        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[7]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.975    
+  -------------------------------------------------------------------
+                         slack                                  1.842    
+
+Slack (MET) :             1.873ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        8.068ns  (logic 6.862ns (85.057%)  route 1.206ns (14.943%))
+  Logic Levels:           3  (CARRY4=1 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[4])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[4]
+                         net (fo=2, routed)           0.697    11.640    u_ConvLayer/C[4]
+    SLICE_X32Y105        LUT2 (Prop_lut2_I0_O)        0.043    11.683 r  u_ConvLayer/cl_output_addrb_kernel[7]_i_6/O
+                         net (fo=1, routed)           0.000    11.683    u_ConvLayer/cl_output_addrb_kernel[7]_i_6_n_3
+    SLICE_X32Y105        CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.261    11.944 r  u_ConvLayer/cl_output_addrb_kernel_reg[7]_i_2/O[2]
+                         net (fo=1, routed)           0.000    11.944    u_ConvLayer/cl_output_addrb_kernel0[6]
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[6]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y105        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[6]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.944    
+  -------------------------------------------------------------------
+                         slack                                  1.873    
+
+Slack (MET) :             1.887ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        8.054ns  (logic 7.012ns (87.067%)  route 1.042ns (12.933%))
+  Logic Levels:           4  (CARRY4=2 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[0])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[0]
+                         net (fo=2, routed)           0.533    11.476    u_ConvLayer/C[0]
+    SLICE_X32Y104        LUT2 (Prop_lut2_I0_O)        0.043    11.519 r  u_ConvLayer/cl_output_addrb_kernel[3]_i_5/O
+                         net (fo=1, routed)           0.000    11.519    u_ConvLayer/cl_output_addrb_kernel[3]_i_5_n_3
+    SLICE_X32Y104        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246    11.765 r  u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.765    u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1_n_3
+    SLICE_X32Y105        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.165    11.930 r  u_ConvLayer/cl_output_addrb_kernel_reg[7]_i_2/O[1]
+                         net (fo=1, routed)           0.000    11.930    u_ConvLayer/cl_output_addrb_kernel0[5]
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[5]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y105        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[5]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.930    
+  -------------------------------------------------------------------
+                         slack                                  1.887    
+
+Slack (MET) :             1.944ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        7.997ns  (logic 6.955ns (86.975%)  route 1.042ns (13.025%))
+  Logic Levels:           4  (CARRY4=2 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[0])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[0]
+                         net (fo=2, routed)           0.533    11.476    u_ConvLayer/C[0]
+    SLICE_X32Y104        LUT2 (Prop_lut2_I0_O)        0.043    11.519 r  u_ConvLayer/cl_output_addrb_kernel[3]_i_5/O
+                         net (fo=1, routed)           0.000    11.519    u_ConvLayer/cl_output_addrb_kernel[3]_i_5_n_3
+    SLICE_X32Y104        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246    11.765 r  u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.765    u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1_n_3
+    SLICE_X32Y105        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108    11.873 r  u_ConvLayer/cl_output_addrb_kernel_reg[7]_i_2/O[0]
+                         net (fo=1, routed)           0.000    11.873    u_ConvLayer/cl_output_addrb_kernel0[4]
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[4]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y105        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[4]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.873    
+  -------------------------------------------------------------------
+                         slack                                  1.944    
+
+Slack (MET) :             2.006ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        7.935ns  (logic 6.893ns (86.873%)  route 1.042ns (13.127%))
+  Logic Levels:           3  (CARRY4=1 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[0])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[0]
+                         net (fo=2, routed)           0.533    11.476    u_ConvLayer/C[0]
+    SLICE_X32Y104        LUT2 (Prop_lut2_I0_O)        0.043    11.519 r  u_ConvLayer/cl_output_addrb_kernel[3]_i_5/O
+                         net (fo=1, routed)           0.000    11.519    u_ConvLayer/cl_output_addrb_kernel[3]_i_5_n_3
+    SLICE_X32Y104        CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    11.811 r  u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1/O[3]
+                         net (fo=1, routed)           0.000    11.811    u_ConvLayer/cl_output_addrb_kernel0[3]
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[3]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y104        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[3]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.811    
+  -------------------------------------------------------------------
+                         slack                                  2.006    
+
+Slack (MET) :             2.037ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        7.904ns  (logic 6.862ns (86.821%)  route 1.042ns (13.179%))
+  Logic Levels:           3  (CARRY4=1 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[0])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[0]
+                         net (fo=2, routed)           0.533    11.476    u_ConvLayer/C[0]
+    SLICE_X32Y104        LUT2 (Prop_lut2_I0_O)        0.043    11.519 r  u_ConvLayer/cl_output_addrb_kernel[3]_i_5/O
+                         net (fo=1, routed)           0.000    11.519    u_ConvLayer/cl_output_addrb_kernel[3]_i_5_n_3
+    SLICE_X32Y104        CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.261    11.780 r  u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1/O[2]
+                         net (fo=1, routed)           0.000    11.780    u_ConvLayer/cl_output_addrb_kernel0[2]
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[2]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y104        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[2]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.780    
+  -------------------------------------------------------------------
+                         slack                                  2.037    
+
+Slack (MET) :             2.081ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        7.860ns  (logic 6.818ns (86.748%)  route 1.042ns (13.252%))
+  Logic Levels:           3  (CARRY4=1 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[0])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[0]
+                         net (fo=2, routed)           0.533    11.476    u_ConvLayer/C[0]
+    SLICE_X32Y104        LUT2 (Prop_lut2_I0_O)        0.043    11.519 r  u_ConvLayer/cl_output_addrb_kernel[3]_i_5/O
+                         net (fo=1, routed)           0.000    11.519    u_ConvLayer/cl_output_addrb_kernel[3]_i_5_n_3
+    SLICE_X32Y104        CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.217    11.736 r  u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1/O[1]
+                         net (fo=1, routed)           0.000    11.736    u_ConvLayer/cl_output_addrb_kernel0[1]
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[1]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y104        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.736    
+  -------------------------------------------------------------------
+                         slack                                  2.081    
+
+Slack (MET) :             2.178ns  (required time - arrival time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel4/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/cl_output_addrb_kernel_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        7.763ns  (logic 6.721ns (86.582%)  route 1.042ns (13.418%))
+  Logic Levels:           3  (CARRY4=1 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.100ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.487ns = ( 13.487 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.876ns
+    Clock Pessimism Removal (CPR):    0.290ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.313     3.876    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    DSP48_X2Y45          DSP48E1                                      r  u_ConvLayer/cl_output_addrb_kernel4/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X2Y45          DSP48E1 (Prop_dsp48e1_CLK_P[14])
+                                                      3.821     7.697 r  u_ConvLayer/cl_output_addrb_kernel4/P[14]
+                         net (fo=1, routed)           0.509     8.206    u_ConvLayer/cl_output_addrb_kernel4_n_94
+    DSP48_X2Y44          DSP48E1 (Prop_dsp48e1_A[14]_P[0])
+                                                      2.737    10.943 r  u_ConvLayer/cl_output_addrb_kernel3/P[0]
+                         net (fo=2, routed)           0.533    11.476    u_ConvLayer/C[0]
+    SLICE_X32Y104        LUT2 (Prop_lut2_I0_O)        0.043    11.519 r  u_ConvLayer/cl_output_addrb_kernel[3]_i_5/O
+                         net (fo=1, routed)           0.000    11.519    u_ConvLayer/cl_output_addrb_kernel[3]_i_5_n_3
+    SLICE_X32Y104        CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.120    11.639 r  u_ConvLayer/cl_output_addrb_kernel_reg[3]_i_1/O[0]
+                         net (fo=1, routed)           0.000    11.639    u_ConvLayer/cl_output_addrb_kernel0[0]
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.127    13.487    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[0]/C
+                         clock pessimism              0.290    13.777    
+                         clock uncertainty           -0.035    13.741    
+    SLICE_X32Y104        FDRE (Setup_fdre_C_D)        0.076    13.817    u_ConvLayer/cl_output_addrb_kernel_reg[0]
+  -------------------------------------------------------------------
+                         required time                         13.817    
+                         arrival time                         -11.639    
+  -------------------------------------------------------------------
+                         slack                                  2.178    
+
+Slack (MET) :             2.600ns  (required time - arrival time)
+  Source:                 u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/kernel_size_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[2].mu_output_result3_reg/A[3]
+                            (rising edge-triggered cell DSP48E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        7.460ns  (logic 0.302ns (4.048%)  route 7.158ns (95.952%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.356ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.937ns = ( 13.937 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.798ns
+    Clock Pessimism Removal (CPR):    0.217ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.234     3.798    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/lt_input_clk_IBUF_BUFG
+    SLICE_X66Y121        FDRE                                         r  u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/kernel_size_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X66Y121        FDRE (Prop_fdre_C_Q)         0.259     4.057 r  u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/kernel_size_reg[2]/Q
+                         net (fo=724, routed)         6.368    10.424    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_ShiftMatrix/u3/MULT_BLOCK.genblk1[4].mu_output_result3_reg
+    SLICE_X28Y30         LUT5 (Prop_lut5_I1_O)        0.043    10.467 r  u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_ShiftMatrix/u3/sa_output_dataout[43]_i_1__32/O
+                         net (fo=2, routed)           0.790    11.257    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_mult_unit_v2/mu_input_a3[19]
+    DSP48_X0Y12          DSP48E1                                      r  u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[2].mu_output_result3_reg/A[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.577    13.937    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_mult_unit_v2/lt_input_clk_IBUF_BUFG
+    DSP48_X0Y12          DSP48E1                                      r  u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[2].mu_output_result3_reg/CLK
+                         clock pessimism              0.217    14.153    
+                         clock uncertainty           -0.035    14.118    
+    DSP48_X0Y12          DSP48E1 (Setup_dsp48e1_CLK_A[3])
+                                                     -0.261    13.857    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[2].mu_output_result3_reg
+  -------------------------------------------------------------------
+                         required time                         13.857    
+                         arrival time                         -11.257    
+  -------------------------------------------------------------------
+                         slack                                  2.600    
+
+Slack (MET) :             2.650ns  (required time - arrival time)
+  Source:                 u_ConvLayer/u_act_buf/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate1/u_PaddingArray/padding_buf_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (input_clk rise@10.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        7.345ns  (logic 1.843ns (25.094%)  route 5.502ns (74.906%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.820ns = ( 13.820 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.074ns
+    Clock Pessimism Removal (CPR):    0.219ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.818     0.818 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.653     2.471    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     2.564 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.511     4.074    u_ConvLayer/u_act_buf/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/clka
+    RAMB36_X1Y13         RAMB36E1                                     r  u_ConvLayer/u_act_buf/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X1Y13         RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      1.800     5.874 r  u_ConvLayer/u_act_buf/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/DOADO[4]
+                         net (fo=8, routed)           5.502    11.376    u_ConvLayer/u_MemoryGate1/u_PaddingArray/mg_input_doutb_act[4]
+    SLICE_X100Y42        LUT2 (Prop_lut2_I1_O)        0.043    11.419 r  u_ConvLayer/u_MemoryGate1/u_PaddingArray/padding_buf[4]_i_1__0/O
+                         net (fo=1, routed)           0.000    11.419    u_ConvLayer/u_MemoryGate1/u_PaddingArray/p_2_in[4]
+    SLICE_X100Y42        FDRE                                         r  u_ConvLayer/u_MemoryGate1/u_PaddingArray/padding_buf_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                     10.000    10.000 r  
+    AC12                                              0.000    10.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000    10.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.742    10.742 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.535    12.277    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083    12.360 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       1.460    13.820    u_ConvLayer/u_MemoryGate1/u_PaddingArray/lt_input_clk_IBUF_BUFG
+    SLICE_X100Y42        FDRE                                         r  u_ConvLayer/u_MemoryGate1/u_PaddingArray/padding_buf_reg[4]/C
+                         clock pessimism              0.219    14.039    
+                         clock uncertainty           -0.035    14.003    
+    SLICE_X100Y42        FDRE (Setup_fdre_C_D)        0.065    14.068    u_ConvLayer/u_MemoryGate1/u_PaddingArray/padding_buf_reg[4]
+  -------------------------------------------------------------------
+                         required time                         14.068    
+                         arrival time                         -11.419    
+  -------------------------------------------------------------------
+                         slack                                  2.650    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.060ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[35]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[51]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.289ns  (logic 0.146ns (50.475%)  route 0.143ns (49.525%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.142ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.112ns
+    Source Clock Delay      (SCD):    1.616ns
+    Clock Pessimism Removal (CPR):    0.354ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.708     1.616    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/lt_input_clk_IBUF_BUFG
+    SLICE_X22Y49         FDRE                                         r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[35]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X22Y49         FDRE (Prop_fdre_C_Q)         0.118     1.734 r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[35]/Q
+                         net (fo=2, routed)           0.143     1.877    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ControlPipeline/sa_output_dataout_reg[63]_3[35]
+    SLICE_X22Y50         LUT6 (Prop_lut6_I4_O)        0.028     1.905 r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ControlPipeline/sa_output_dataout[51]_i_1__67/O
+                         net (fo=1, routed)           0.000     1.905    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[63]_0[51]
+    SLICE_X22Y50         FDRE                                         r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[51]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.878     2.112    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/lt_input_clk_IBUF_BUFG
+    SLICE_X22Y50         FDRE                                         r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[51]/C
+                         clock pessimism             -0.354     1.758    
+    SLICE_X22Y50         FDRE (Hold_fdre_C_D)         0.087     1.845    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[51]
+  -------------------------------------------------------------------
+                         required time                         -1.845    
+                         arrival time                           1.905    
+  -------------------------------------------------------------------
+                         slack                                  0.060    
+
+Slack (MET) :             0.069ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_IncreaseBuf5/data_buf_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_IncreaseBuf5/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/DIADI[22]
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.365ns  (logic 0.130ns (35.618%)  route 0.235ns (64.382%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.041ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.063ns
+    Source Clock Delay      (SCD):    1.509ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.601     1.509    u_ConvLayer/u_IncreaseBuf5/lt_input_clk_IBUF_BUFG
+    SLICE_X23Y111        FDRE                                         r  u_ConvLayer/u_IncreaseBuf5/data_buf_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y111        FDRE (Prop_fdre_C_Q)         0.100     1.609 r  u_ConvLayer/u_IncreaseBuf5/data_buf_reg[0][0]/Q
+                         net (fo=2, routed)           0.138     1.747    u_ConvLayer/u_IncreaseBuf5/data_buf_reg[0]_87[0]
+    SLICE_X23Y111        LUT3 (Prop_lut3_I2_O)        0.030     1.777 r  u_ConvLayer/u_IncreaseBuf5/u_bib_i_9__4/O
+                         net (fo=1, routed)           0.097     1.874    u_ConvLayer/u_IncreaseBuf5/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/dina[20]
+    RAMB36_X1Y22         RAMB36E1                                     r  u_ConvLayer/u_IncreaseBuf5/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/DIADI[22]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.830     2.063    u_ConvLayer/u_IncreaseBuf5/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clka
+    RAMB36_X1Y22         RAMB36E1                                     r  u_ConvLayer/u_IncreaseBuf5/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism             -0.514     1.549    
+    RAMB36_X1Y22         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_DIADI[22])
+                                                      0.255     1.804    u_ConvLayer/u_IncreaseBuf5/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         -1.804    
+                         arrival time                           1.874    
+  -------------------------------------------------------------------
+                         slack                                  0.069    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/raddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate4/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[8]
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.302ns  (logic 0.100ns (33.139%)  route 0.202ns (66.861%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.044ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.056ns
+    Source Clock Delay      (SCD):    1.499ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.591     1.499    u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/lt_input_clk_IBUF_BUFG
+    SLICE_X23Y126        FDRE                                         r  u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/raddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y126        FDRE (Prop_fdre_C_Q)         0.100     1.599 r  u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/raddr_reg[2]/Q
+                         net (fo=1, routed)           0.202     1.801    u_ConvLayer/u_MemoryGate4/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[2]
+    RAMB36_X1Y25         RAMB36E1                                     r  u_ConvLayer/u_MemoryGate4/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.823     2.056    u_ConvLayer/u_MemoryGate4/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/clka
+    RAMB36_X1Y25         RAMB36E1                                     r  u_ConvLayer/u_MemoryGate4/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+                         clock pessimism             -0.514     1.542    
+    RAMB36_X1Y25         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[8])
+                                                      0.183     1.725    u_ConvLayer/u_MemoryGate4/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram
+  -------------------------------------------------------------------
+                         required time                         -1.725    
+                         arrival time                           1.801    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.082ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_IncreaseBuf6/data_buf_reg[6][1]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_IncreaseBuf6/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/DIADI[8]
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.438ns  (logic 0.146ns (33.313%)  route 0.292ns (66.687%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.061ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.023ns
+    Source Clock Delay      (SCD):    1.469ns
+    Clock Pessimism Removal (CPR):    0.494ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.561     1.469    u_ConvLayer/u_IncreaseBuf6/lt_input_clk_IBUF_BUFG
+    SLICE_X36Y118        FDRE                                         r  u_ConvLayer/u_IncreaseBuf6/data_buf_reg[6][1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y118        FDRE (Prop_fdre_C_Q)         0.118     1.587 r  u_ConvLayer/u_IncreaseBuf6/data_buf_reg[6][1]/Q
+                         net (fo=2, routed)           0.123     1.710    u_ConvLayer/u_IncreaseBuf6/data_buf_reg[6]_89[1]
+    SLICE_X37Y118        LUT3 (Prop_lut3_I2_O)        0.028     1.738 r  u_ConvLayer/u_IncreaseBuf6/u_bib_i_56__5/O
+                         net (fo=1, routed)           0.169     1.907    u_ConvLayer/u_IncreaseBuf6/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/dina[9]
+    RAMB36_X2Y23         RAMB36E1                                     r  u_ConvLayer/u_IncreaseBuf6/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/DIADI[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.790     2.023    u_ConvLayer/u_IncreaseBuf6/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/clka
+    RAMB36_X2Y23         RAMB36E1                                     r  u_ConvLayer/u_IncreaseBuf6/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism             -0.494     1.529    
+    RAMB36_X2Y23         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_DIADI[8])
+                                                      0.296     1.825    u_ConvLayer/u_IncreaseBuf6/u_bib/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         -1.825    
+                         arrival time                           1.907    
+  -------------------------------------------------------------------
+                         slack                                  0.082    
+
+Slack (MET) :             0.084ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_MemoryGate0/input_write_pointer_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate0/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRBWRADDR[13]
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.301ns  (logic 0.091ns (30.256%)  route 0.210ns (69.744%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.072ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.090ns
+    Source Clock Delay      (SCD):    1.505ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.597     1.505    u_ConvLayer/u_MemoryGate0/lt_input_clk_IBUF_BUFG
+    SLICE_X92Y56         FDRE                                         r  u_ConvLayer/u_MemoryGate0/input_write_pointer_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y56         FDRE (Prop_fdre_C_Q)         0.091     1.596 r  u_ConvLayer/u_MemoryGate0/input_write_pointer_reg[7]/Q
+                         net (fo=2, routed)           0.210     1.806    u_ConvLayer/u_MemoryGate0/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[7]
+    RAMB36_X4Y11         RAMB36E1                                     r  u_ConvLayer/u_MemoryGate0/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRBWRADDR[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.857     2.090    u_ConvLayer/u_MemoryGate0/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/clka
+    RAMB36_X4Y11         RAMB36E1                                     r  u_ConvLayer/u_MemoryGate0/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
+                         clock pessimism             -0.514     1.576    
+    RAMB36_X4Y11         RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[13])
+                                                      0.145     1.721    u_ConvLayer/u_MemoryGate0/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram
+  -------------------------------------------------------------------
+                         required time                         -1.721    
+                         arrival time                           1.806    
+  -------------------------------------------------------------------
+                         slack                                  0.084    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[8]
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.310ns  (logic 0.118ns (38.048%)  route 0.192ns (61.952%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.043ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.031ns
+    Source Clock Delay      (SCD):    1.476ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.568     1.476    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y104        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y104        FDRE (Prop_fdre_C_Q)         0.118     1.594 r  u_ConvLayer/cl_output_addrb_kernel_reg[3]/Q
+                         net (fo=1, routed)           0.192     1.786    u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[3]
+    RAMB36_X2Y21         RAMB36E1                                     r  u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.798     2.031    u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB36_X2Y21         RAMB36E1                                     r  u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism             -0.513     1.518    
+    RAMB36_X2Y21         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[8])
+                                                      0.183     1.701    u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         -1.701    
+                         arrival time                           1.786    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.086ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.287ns  (logic 0.146ns (50.865%)  route 0.141ns (49.135%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.141ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.036ns
+    Source Clock Delay      (SCD):    1.561ns
+    Clock Pessimism Removal (CPR):    0.334ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.653     1.561    u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/lt_input_clk_IBUF_BUFG
+    SLICE_X26Y99         FDRE                                         r  u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y99         FDRE (Prop_fdre_C_Q)         0.118     1.679 r  u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg[5]/Q
+                         net (fo=2, routed)           0.141     1.820    u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg_n_3_[5]
+    SLICE_X28Y100        LUT5 (Prop_lut5_I0_O)        0.028     1.848 r  u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout[13]_i_1__36/O
+                         net (fo=1, routed)           0.000     1.848    u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/p_2_in[13]
+    SLICE_X28Y100        FDRE                                         r  u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.802     2.036    u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/lt_input_clk_IBUF_BUFG
+    SLICE_X28Y100        FDRE                                         r  u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg[13]/C
+                         clock pessimism             -0.334     1.702    
+    SLICE_X28Y100        FDRE (Hold_fdre_C_D)         0.060     1.762    u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_ShiftMatrix/u2/sa_output_dataout_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -1.762    
+                         arrival time                           1.848    
+  -------------------------------------------------------------------
+                         slack                                  0.086    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 u_ConvLayer/cl_output_addrb_kernel_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[10]
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.312ns  (logic 0.118ns (37.789%)  route 0.194ns (62.211%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.043ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.031ns
+    Source Clock Delay      (SCD):    1.476ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.568     1.476    u_ConvLayer/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y105        FDRE                                         r  u_ConvLayer/cl_output_addrb_kernel_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y105        FDRE (Prop_fdre_C_Q)         0.118     1.594 r  u_ConvLayer/cl_output_addrb_kernel_reg[5]/Q
+                         net (fo=1, routed)           0.194     1.788    u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]
+    RAMB36_X2Y21         RAMB36E1                                     r  u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/ADDRARDADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.798     2.031    u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB36_X2Y21         RAMB36E1                                     r  u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism             -0.513     1.518    
+    RAMB36_X2Y21         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[10])
+                                                      0.183     1.701    u_blk_mem_kernel/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         -1.701    
+                         arrival time                           1.788    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[57]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/sa_output_dataout_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.146ns (50.694%)  route 0.142ns (49.306%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.141ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.108ns
+    Source Clock Delay      (SCD):    1.613ns
+    Clock Pessimism Removal (CPR):    0.354ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.705     1.613    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/lt_input_clk_IBUF_BUFG
+    SLICE_X26Y49         FDRE                                         r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[57]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y49         FDRE (Prop_fdre_C_Q)         0.118     1.731 r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u6/sa_output_dataout_reg[57]/Q
+                         net (fo=2, routed)           0.142     1.873    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/Q[1]
+    SLICE_X28Y50         LUT5 (Prop_lut5_I2_O)        0.028     1.901 r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/sa_output_dataout[9]_i_1__25/O
+                         net (fo=1, routed)           0.000     1.901    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/p_2_in[9]
+    SLICE_X28Y50         FDRE                                         r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/sa_output_dataout_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.874     2.108    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/lt_input_clk_IBUF_BUFG
+    SLICE_X28Y50         FDRE                                         r  u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/sa_output_dataout_reg[9]/C
+                         clock pessimism             -0.354     1.754    
+    SLICE_X28Y50         FDRE (Hold_fdre_C_D)         0.060     1.814    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_ShiftMatrix/u1/sa_output_dataout_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -1.814    
+                         arrival time                           1.901    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/raddr_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            u_ConvLayer/u_MemoryGate6/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[13]
+                            (rising edge-triggered cell RAMB36E1 clocked by input_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             input_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (input_clk rise@0.000ns - input_clk rise@0.000ns)
+  Data Path Delay:        0.314ns  (logic 0.118ns (37.607%)  route 0.196ns (62.393%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.044ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.174ns
+    Source Clock Delay      (SCD):    1.578ns
+    Clock Pessimism Removal (CPR):    0.553ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.159     0.159 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.723     0.882    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.908 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.670     1.578    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/lt_input_clk_IBUF_BUFG
+    SLICE_X32Y39         FDRE                                         r  u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/raddr_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y39         FDRE (Prop_fdre_C_Q)         0.118     1.696 r  u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/raddr_reg[7]/Q
+                         net (fo=1, routed)           0.196     1.892    u_ConvLayer/u_MemoryGate6/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[7]
+    RAMB36_X2Y7          RAMB36E1                                     r  u_ConvLayer/u_MemoryGate6/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock input_clk rise edge)
+                                                      0.000     0.000 r  
+    AC12                                              0.000     0.000 r  lt_input_clk (IN)
+                         net (fo=0)                   0.000     0.000    lt_input_clk
+    AC12                 IBUF (Prop_ibuf_I_O)         0.408     0.408 r  lt_input_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.796     1.204    lt_input_clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.030     1.234 r  lt_input_clk_IBUF_BUFG_inst/O
+                         net (fo=12994, routed)       0.941     2.174    u_ConvLayer/u_MemoryGate6/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/clka
+    RAMB36_X2Y7          RAMB36E1                                     r  u_ConvLayer/u_MemoryGate6/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKARDCLK
+                         clock pessimism             -0.553     1.621    
+    RAMB36_X2Y7          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[13])
+                                                      0.183     1.804    u_ConvLayer/u_MemoryGate6/u_input_buffer/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram
+  -------------------------------------------------------------------
+                         required time                         -1.804    
+                         arrival time                           1.892    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         input_clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { lt_input_clk }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     DSP48E1/CLK  n/a            3.734         10.000      6.266      DSP48_X2Y46     u_ConvLayer/cl_output_addra_act_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X4Y23     u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[4].mu_output_result2_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X6Y12     u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[4].mu_output_result4_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X4Y44     u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[0].mu_output_result1_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X2Y61     u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[0].mu_output_result2_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X3Y27     u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[0].mu_output_result3_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X3Y8      u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[0].mu_output_result4_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X0Y43     u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[1].mu_output_result1_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X5Y38     u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[4].mu_output_result3_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228      DSP48_X4Y43     u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/u_mult_unit_v2/MULT_BLOCK.genblk1[0].mu_output_result2_reg/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X106Y50   u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X102Y70   u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+Low Pulse Width   Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X102Y70   u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X90Y94    u_ConvLayer/u_MemoryGate3/u_ActivePipeline/whatever[1].ap_output_conf_reg[1]_srl2___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r/CLK
+Low Pulse Width   Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X90Y94    u_ConvLayer/u_MemoryGate3/u_ActivePipeline/whatever[1].ap_output_conf_reg[1]_srl2___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X42Y45    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X46Y67    u_ConvLayer/u_MemoryGate5/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X38Y127   u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+Low Pulse Width   Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X38Y127   u_ConvLayer/u_MemoryGate4/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X74Y102   u_ConvLayer/u_MemoryGate3/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X102Y110  u_ConvLayer/u_MemoryGate2/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X106Y50   u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X38Y97    u_ConvLayer/u_MemoryGate7/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X42Y45    u_ConvLayer/u_MemoryGate6/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X102Y110  u_ConvLayer/u_MemoryGate2/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X106Y50   u_ConvLayer/u_MemoryGate1/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X102Y70   u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X102Y70   u_ConvLayer/u_MemoryGate0/u_ConvUnit_v2/u_cal_fin_pipe/whatever[13].ap_output_conf_reg[13]_srl14___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r_11/CLK
+High Pulse Width  Slow    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X90Y94    u_ConvLayer/u_MemoryGate3/u_ActivePipeline/whatever[1].ap_output_conf_reg[1]_srl2___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r/CLK
+High Pulse Width  Fast    SRL16E/CLK   n/a            0.642         5.000       4.358      SLICE_X90Y94    u_ConvLayer/u_MemoryGate3/u_ActivePipeline/whatever[1].ap_output_conf_reg[1]_srl2___u_ConvLayer_u_MemoryGate0_u_ConvUnit_v2_u_cal_fin_pipe_whatever_r/CLK
+
+
+

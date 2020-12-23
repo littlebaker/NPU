@@ -1,0 +1,121 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 21:19:19 2020
+| Host         : LITTLEBAKER running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_kernel'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of blk_mem_kernel (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 21:19:16 2020
+| Host         : LITTLEBAKER running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_input_buffer'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of blk_mem_input_buffer (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 21:19:15 2020
+| Host         : LITTLEBAKER running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_increase_buf'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of blk_mem_increase_buf (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 21:19:14 2020
+| Host         : LITTLEBAKER running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_cl_kernel_buf'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of blk_mem_cl_kernel_buf (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 21:19:13 2020
+| Host         : LITTLEBAKER running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_cl_act_buf'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of blk_mem_cl_act_buf (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 21:19:12 2020
+| Host         : LITTLEBAKER running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_act'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of blk_mem_act (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
